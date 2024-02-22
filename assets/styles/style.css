@@ -1,0 +1,252 @@
+@import 'fonts.css';
+@import 'reset.css';
+
+/* header */
+
+
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: #282828;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__list {
+    margin: 6px  0;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 30px;
+}
+
+.nav__list-link {
+    /* margin-left: 30px; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.nav__list-righ {
+    display: flex;
+    gap: 30px;
+    /* position: relative; */
+    /* left: 125%; */
+}
+
+.header__content {
+    height: 500px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #151515 100%), url('../images/products/Header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content-title {
+    font-family: 'Prosto One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+.header__content-button {
+    margin-top: 38px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 6px 14px;
+}
+
+.header__content-linkButton {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #171718;
+    margin-right: 11px;
+}
+
+/* main */
+.main {
+    background: #151515;
+}
+.main__products {
+    width: 100%;
+    height: 1255px;
+    position: relative;
+}
+
+.main__product-textOne {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 30%;
+    left: 15%;
+    top: 130px;
+}
+
+.main__product-imageOne {
+    margin-left: 30px;
+    position: absolute;
+    right: 9%;
+    top: 30px;
+}
+
+.main__product-imageTwo {
+    position: absolute;
+    left: 12%;
+    top: 415px;
+}
+
+.main__product-textTwo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 30%;
+    top: 566px;
+    right: 17%;
+}
+
+.main__product-textThree {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 1018px;
+    left: 14%;
+    width: 20%;
+}
+
+.main__product-textFour {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 1006px;
+    width: 20%;
+    right: 14%;
+}
+
+.main__product-imageThree {
+    position: absolute;
+    top: 1070px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main__product-imageThree::after {
+    content: '';
+    display: block;
+    width: 61px;
+    height: 1px;
+    background: red;
+    position: absolute;
+    left: -70px;
+    top: 200px;
+    background: #C4C4C4;
+}
+.main__product-imageThree::before {
+    content: '';
+    display: block;
+    width: 61px;
+    height: 1px;
+    background: red;
+    position: absolute;
+    right: -70px;
+    top: 200px;
+    background: #C4C4C4;
+}
+
+.main__phones {
+    margin-top: 59px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main__phone-card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    width: 255px;
+    height: 312px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.main__phone-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.main__phones-price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main__phone-button {
+    padding: 7px 57px;
+    background: #151515;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* footer */
+
+.footer__nav {
+    width: 100%;
+    background: #282828;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.25);
+    padding: 80px 0;
+}
